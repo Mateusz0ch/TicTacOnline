@@ -1,0 +1,1 @@
+This is simple project which main goal is to show how we can establish connections beetwen two hosts based on sockets.In application there is implemented simple console interface to make game easier. In this project we were focused on sockets. In future i will try also solution with 2 hosts and server which will be resopnsible for updating data about oponents move.
