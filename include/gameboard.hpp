@@ -6,8 +6,10 @@
 class GameBoard
 {
 public:
-    static int tab[SIZE][SIZE];
-    static void drawBoard();
+    int tab[SIZE][SIZE];
+    void initBoard();
+    void drawBoard();
+    bool isEnd();
 };
 
 #endif

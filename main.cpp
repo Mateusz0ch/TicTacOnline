@@ -4,5 +4,7 @@
 int main()
 {
     std::cout << "TicTacToe game" << std::endl;
-    GameBoard::drawBoard();
+    GameBoard gm;
+    gm.initBoard();
+    gm.drawBoard();
 }

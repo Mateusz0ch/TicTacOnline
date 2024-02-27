@@ -1,6 +1,15 @@
 #include "../include/gameboard.hpp"
 
-int GameBoard::tab[3][3] = {{1, 0, 1}, {0, -1, 0}, {0, -1, 0}};
+void GameBoard::initBoard()
+{
+    for (int i = 0; i < SIZE; i++)
+    {
+        for (int j = 0; j < SIZE; j++)
+        {
+            tab[i][j] = 0;
+        }
+    }
+}
 void GameBoard::drawBoard()
 {
     for (int i = 0; i < SIZE; i++)
