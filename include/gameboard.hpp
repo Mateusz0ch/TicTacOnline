@@ -9,7 +9,7 @@ public:
     int tab[SIZE][SIZE];
     void initBoard();
     void drawBoard();
-    bool isEnd();
+    int isEnd();
 };
 
 #endif
