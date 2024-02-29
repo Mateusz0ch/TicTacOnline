@@ -35,15 +35,30 @@ void GameBoard::drawBoard()
 }
 int GameBoard::isEnd()
 {
-    for (int i = 0, val = 0; i < SIZE; i++)
+    for (int i = 0, valRow = 0, valCol = 0; i < SIZE; i++)
     {
-        val = 0;
+        valRow = 0;
+        valCol = 0;
         for (int j = 0; j < SIZE; j++)
         {
-            val += tab[i][j];
+            valRow += tab[i][j];
+            valCol += tab[j][i];
         }
-        std::cout << val << std::endl;
-        switch (val)
+        std::cout << valRow << std::endl;
+        switch (valRow)
+        {
+        case 3:
+            std::cout << "User1 won" << std::endl;
+            return 1;
+            break;
+        case -3:
+            std::cout << "User2 won" << std::endl;
+            return -1;
+            break;
+        default:
+            break;
+        }
+        switch (valCol)
         {
         case 3:
             std::cout << "User1 won" << std::endl;

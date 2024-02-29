@@ -7,9 +7,9 @@ int main()
     std::cout << "TicTacToe game" << std::endl;
     GameBoard gm;
     gm.initBoard();
-    gm.tab[row][0] = 1;
-    gm.tab[row][1] = 1;
-    gm.tab[row][2] = 1;
+    gm.tab[0][0] = 1;
+    gm.tab[1][0] = 1;
+    gm.tab[2][0] = 0;
     gm.drawBoard();
     gm.isEnd();
 }
